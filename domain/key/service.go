@@ -66,7 +66,9 @@ func (s *Service) setPersist() {
 		select {
 		case <-ticker.C:
 			err := s.Repository.WriteToFile(s.keys)
-			log.Println("Something went wrong while doing persistent writing process. Details: " + err.Error())
+			if err != nil {
+				log.Println("Something went wrong while doing persistent writing process. Details: " + err.Error())
+			}
 		}
 	}
 }
