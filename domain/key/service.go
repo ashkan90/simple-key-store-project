@@ -65,10 +65,12 @@ func (s *Service) setPersist() {
 	for {
 		select {
 		case <-ticker.C:
+			s.mu.Lock()
 			err := s.Repository.WriteToFile(s.keys)
 			if err != nil {
 				log.Println("Something went wrong while doing persistent writing process. Details: " + err.Error())
 			}
+			s.mu.Unlock()
 		}
 	}
 }
