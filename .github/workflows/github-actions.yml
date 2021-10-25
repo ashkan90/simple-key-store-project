@@ -3,7 +3,7 @@ name: Pipeline steps.
 
 on:
   push:
-    branches: [master]
+    branches: [master, main]
 
 # Your workflows jobs.
 jobs:
