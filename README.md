@@ -1,9 +1,9 @@
-<h1 align="center">Yemeksepeti Case</h1>
+<h1 align="center">Simple Key-Store Example</h1>
 
-![example workflow](https://github.com/ashkan90/ys-project/actions/workflows/github-actions.yml/badge.svg)
+![example workflow](https://github.com/ashkan90/simple-key-store-project/actions/workflows/github-actions.yml/badge.svg)
 
 
-> This project aims to implement very simple in-memory. Written for Delivery Hero case with Hexagonal Architecture.
+> This project aims to implement very simple in-memory key store by using go routine with Hexagonal Architecture.
 
 ### ✨ [Project Runs On](https://ys-project.herokuapp.com/)
 
