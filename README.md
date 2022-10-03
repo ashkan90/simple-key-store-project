@@ -26,7 +26,7 @@ GET /key?key=myKey
 POST /key ## needs json payload as body
 ```
 
-## Example Usages
+## Example Usages 
 
 ```shell
 curl --location --request POST 'http://localhost:8080/key' \
