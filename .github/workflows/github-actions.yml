@@ -19,11 +19,11 @@ jobs:
         with:
           go-version: 1.17
 
-      - name: Golangci Lint
-        uses: golangci/golangci-lint-action@v2.5.2
+      #- name: Golangci Lint
+      #  uses: golangci/golangci-lint-action@v2.5.2
 
-      - name: Race condition
-        run: go test -race ./domain/*
+      #- name: Race condition
+      #  run: go test -race ./domain/*
 
       - name: Test
         run: go test -v ./...
